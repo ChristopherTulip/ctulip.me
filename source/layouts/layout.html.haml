@@ -1,0 +1,11 @@
+%html
+  %head
+    %title= yield(:title) if content_for?(:title)
+    %meta{ name: 'author', content: 'Christopher Tulip' }
+    = stylesheet_link_tag :application
+
+  %body
+    .l-sidebar
+      = yield(:sidebar) if content_for?(:sidebar)
+    .l-content
+      = yield(:body) if content_for?(:body)

@@ -1,0 +1,46 @@
+.l-sidebar
+  position: fixed
+  top: 0
+  left: 0
+  background: black
+  width: $sidebar-width
+  height: 100%
+  color: white
+  overflow: hidden
+
+  &.open
+    width: $sidebar-width-open
+    z-index: 1
+    .text
+      display: inline-block
+      width: 120px
+
+  .text
+    display: none
+
+  .menu, .info, .showcase, .contact
+    position: absolute
+
+    &:hover
+      color: $cyan
+
+  .menu
+    top: 10px
+
+  .info
+    top: calc(50% - 60px)
+
+  .showcase
+    top: 50%
+
+  .contact
+    top: calc(50% + 60px)
+
+  i
+    display: inline-block
+    font-size: 2em
+    text-align: center
+    width: 60px
+
+
+
