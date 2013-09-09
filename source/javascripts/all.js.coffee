@@ -1,7 +1,7 @@
 //= require_tree .
 
 expandCollapse = ->
-  document.getElementsByClassName("icon-reorder")[0].onclick = ->
+  document.getElementsByClassName("menu")[0].onclick = ->
     if document.getElementsByClassName("l-sidebar open").length > 0
       document.getElementsByClassName("l-sidebar open")[0].className = document.getElementsByClassName("l-sidebar open")[0].className.replace( /(?:^|\s)open(?!\S)/g , '' )
     else
